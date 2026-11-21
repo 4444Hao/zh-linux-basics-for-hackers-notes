@@ -1,78 +1,84 @@
-# Linux Basics for Hackers - Notes
+# 黑客 Linux 基础（Linux Basics for Hackers） - 学习笔记
 
-A structured set of study notes based on the book *Linux Basics for Hackers* by OccupyTheWeb. Originally compiled during personal lab practice in Obsidian, then structured and organized with AI assistance for clarity, consistency, and easy navigation.
+这是一套基于 OccupyTheWeb 所著书籍《_Linux Basics for Hackers_》整理而成的结构化学习笔记。原作者最初在个人实验练习期间于 Obsidian 中编写，随后借助 AI 进行了结构化与梳理，以提升清晰度、一致性并便于查阅。
 
-> **Update:** Visual architecture diagrams have been added across core modules to illustrate topics like the filesystem tree, command pipelines, permissions, and kernel space.
+本仓库是 ahegazy0 的学习笔记的简体中文译本，翻译以提交 a4e025c 为基准。[英文原稿](https://github.com/ahegazy0/linux-basics-for-hackers-notes/tree/a4e025c10b280f0ab718a3b2b2a29534fd1cf05a)
 
----
+  
 
-## Modules
+> **更新：** 核心模块中已新增可视化架构图，用于直观展示文件系统目录树、命令管道、文件权限以及内核空间等主题。
+> 
+>   
 
-| # | Topic |
+## 模块目录
+
+|**编号**|**主题**|
 |---|---|
-| 00 | [Getting Started & Setting Up Your Lab](Module_00_Getting_Started.md) |
-| 01 | [The Basics of the Terminal](Module_01_Terminal_Basics.md) |
-| 02 | [Text Manipulation](Module_02_Text_Manipulation.md) |
-| 03 | [Managing Networks](Module_03_Managing_Networks.md) |
-| 04 | [Software Management](Module_04_Software_Management.md) |
-| 05 | [File & Directory Permissions](Module_05_Permissions.md) |
-| 06 | [Process Management](Module_06_Process_Management.md) |
-| 07 | [Environment Variables](Module_07_Environment_Variables.md) |
-| 08 | [Bash Scripting](Module_08_Bash_Scripting.md) |
-| 09 | [Archiving & Compression](Module_09_Archiving_Compression.md) |
-| 10 | [Filesystem & Storage](Module_10_Filesystem_Storage.md) |
-| 11 | [The Logging System](Module_11_Logging_System.md) |
-| 12 | [Using & Abusing Services](Module_12_Using_Abusing_Services.md) |
-| 13 | [Security & Anonymity](Module_13_Security_Anonymity.md) |
-| 14 | [Wireless Networking](Module_14_Wireless_Networking.md) |
-| 15 | [The Kernel & Loadable Kernel Modules](Module_15_Kernel_LKMs.md) |
-| 16 | [Automation & Scheduled Jobs](Module_16_Automation_Jobs.md) |
-| 17 | [Python Scripting](Module_17_Python_Scripting.md) |
+|00|[入门与搭建实验环境](./模块%200%20-%20入门与搭建实验环境.md)|
+|01|[终端基础](./模块%201%20-%20终端基础（The%20Basics%20of%20the%20Terminal）.md)|
+|02|[文本操作](./模块%202%20-%20文本操作（Text%20Manipulation）.md)|
+|03|[网络管理](./模块%203%20-%20网络管理（Managing%20Networks）.md)|
+|04|[软件管理](./模块%204%20-%20软件管理（Software%20Management）.md)|
+|05|[文件和目录权限](./模块%205%20-%20控制文件和目录权限.md)|
+|06|[进程管理](./模块%206%20-%20进程管理.md)|
+|07|[环境变量](./模块%207%20-%20管理用户环境变量.md)|
+|08|[Bash 脚本编写](./模块%208%20-%20Bash%20脚本编写.md)|
+|09|[归档与压缩](./模块%209%20-%20归档与压缩.md)|
+|10|[文件系统与存储](./模块%2010%20-%20文件系统与存储设备.md)|
+|11|[日志系统](./模块%2011%20-%20日志与日志文件.md)|
+|12|[使用与滥用服务](./模块%2012%20-%20使用与滥用服务.md)|
+|13|[安全与匿名](./模块%2013%20-%20实现安全与匿名.md)|
+|14|[无线网络](./模块%2014%20-%20无线网络.md)|
+|15|[内核与可加载内核模块](./模块%2015%20-%20管理%20Linux%20内核与可加载内核模块.md)|
+|16|[自动化与计划任务](./模块%2016%20-%20自动化与计划任务.md)|
+|17|[Python 脚本编写](./模块%2017%20-%20Python%20脚本编写.md)|
 
----
+## 每个模块包含的内容
 
-## What's inside each module
+- 对每个概念通俗易懂的讲解
+    
+- 所有核心命令及配套示例
+    
+- 速查对照表
+    
+- 辅助理解的示意图
+    
+- 章节末尾的练习清单
+    
 
-- Plain English explanations of every concept
-- All key commands with examples
-- Quick reference tables
-- Diagrams where helpful
-- Practice exercises at the end
+## 环境要求
 
----
+- [VirtualBox](https://www.virtualbox.org/) 或任意虚拟机软件
+    
+- [Kali Linux](https://www.kali.org/get-kali/)（64 位）
+    
 
-## Requirements
+## 拓展资源
 
-- [VirtualBox](https://www.virtualbox.org/) or any VM software
-- [Kali Linux](https://www.kali.org/get-kali/) (64-bit)
+完成所有模块后，可前往以下平台继续练习并深入学习。
 
----
+  
 
-## Extra Resources
-
-Places to practice and go deeper after finishing the modules.
-
-| Resource | What it is |
+|**资源**|**简介**|
 |---|---|
-| [LabEx - Linux Journey](https://labex.io/linuxjourney) | Interactive Linux lessons in the browser |
-| [OverTheWire - Bandit](https://overthewire.org/wargames/bandit/) | Learn Linux by solving security challenges via SSH |
-| [TryHackMe - Linux Fundamentals](https://tryhackme.com/module/linux-fundamentals) | Guided rooms covering Linux basics hands-on |
-| [CMD Challenge](https://cmdchallenge.com) | Practice terminal commands by solving small puzzles |
-| [Hack The Box - Linux Fundamentals](https://academy.hackthebox.com/course/preview/linux-fundamentals) | Professional-level Linux course for security |
+|[LabEx - Linux Journey](https://labex.io/linuxjourney)|浏览器中的交互式 Linux 课程|
+|[OverTheWire - Bandit](https://overthewire.org/wargames/bandit/)|通过 SSH 解决安全挑战来学习 Linux|
+|[TryHackMe - Linux Fundamentals](https://tryhackme.com/module/linux-fundamentals)|涵盖 Linux 基础知识的引导式实操房间|
+|[CMD Challenge](https://cmdchallenge.com/)|通过解决小谜题练习终端命令|
+|[Hack The Box - Linux Fundamentals](https://academy.hackthebox.com/course/preview/linux-fundamentals)|面向安全领域的专业级 Linux 课程|
 
----
+## 免责声明
 
-## Disclaimer
+本课程仅用于教育学习目的。文中涉及的所有内容均应在你自己的实验环境中练习，切勿在你不拥有或未获得明确书面授权的系统上进行测试。
 
-This course is for educational purposes only. Everything here should be practiced in your own lab environment. Never test on systems you don't own or have explicit permission to test.
+  
 
----
+## 参考书籍
 
-## Book
+> 《_Linux Basics for Hackers_》—— OccupyTheWeb 著，No Starch Press 出版
+> 
+>   
 
-> *Linux Basics for Hackers* by OccupyTheWeb - No Starch Press
+## 对网络基础感兴趣？
 
----
-
-## Interested in Networking? 
-> You may also find my [Network Basics for Hackers Notes](https://github.com/ahegazy0/network-basics-for-hackers-notes)
+> 你也可以查看上游作者的 [黑客网络基础学习笔记（Network Basics for Hackers Notes）](https://github.com/ahegazy0/network-basics-for-hackers-notes)
