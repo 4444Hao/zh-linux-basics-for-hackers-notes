@@ -1,8 +1,7 @@
 # 黑客 Linux 基础（Linux Basics for Hackers） - 学习笔记
+本仓库是 ahegazy0 的学习笔记的简体中文译本，原仓库见[英文原稿](https://github.com/ahegazy0/linux-basics-for-hackers-notes/tree/a4e025c10b280f0ab718a3b2b2a29534fd1cf05a)。
 
 这是一套基于 OccupyTheWeb 所著书籍《_Linux Basics for Hackers_》整理而成的结构化学习笔记。原作者最初在个人实验练习期间于 Obsidian 中编写，随后借助 AI 进行了结构化与梳理，以提升清晰度、一致性并便于查阅。
-
-本仓库是 ahegazy0 的学习笔记的简体中文译本，翻译以提交 a4e025c 为基准。[英文原稿](https://github.com/ahegazy0/linux-basics-for-hackers-notes/tree/a4e025c10b280f0ab718a3b2b2a29534fd1cf05a)
 
   
 
